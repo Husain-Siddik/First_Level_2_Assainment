@@ -1,5 +1,5 @@
 
-//* problem 1
+
 
 type FormatValueType = string | number | boolean
 
@@ -22,7 +22,7 @@ function formatValue(value: FormatValueType): FormatValueType {
 
 
 
-//* problem 2
+
 
 
 
@@ -43,7 +43,7 @@ function getLength(value: string | any[]): number {
 
 
 
-//* problem 3
+
 class Person {
 
     name: string;
@@ -63,7 +63,7 @@ class Person {
 
 }
 
-//*problem 4
+
 
 type item = {
     title: string;
@@ -78,14 +78,10 @@ function filterByRating(books: item[]): item[] {
 
 
 
-// const books: item[] = [
-//     { title: 'Book A', rating: 4.5 },
-//     { title: 'Book B', rating: 3.2 },
-//     { title: 'Book C', rating: 5.0 },
-// ];
 
 
-//* problem 5
+
+
 
 type UserOBj = {
     id: number;
@@ -104,17 +100,10 @@ function filterActiveUsers(users: UserOBj[]): UserOBj[] {
 
 
 
-// const users = [
-//   { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
-//   { id: 2, name: 'Asha', email: 'asha@example.com', isActive: false },
-//   { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
-// ];
-
-// console.log(filterActiveUsers(users));
-// console.log(users);
 
 
-//* problem 6
+
+
 
 interface Book {
 
@@ -135,16 +124,6 @@ function printBookDetails(book: Book) {
 }
 
 
-// const myBook: Book = {
-//     title: 'The Great Gatsby',
-//     author: 'F. Scott Fitzgerald',
-//     publishedYear: 1925,
-//     isAvailable: true,
-// };
-
-//printBookDetails(myBook);
-
-//* problem 7
 
 
 
@@ -187,11 +166,8 @@ function getUniqueValues<T extends number | string>(arr1: T[], arr2: T[]): T[] {
 }
 
 
-// const array1 = [1, 2, 3, 4, 5];
-// const array2 = [3, 4, 5, 6, 7];
-// console.log(getUniqueValues(array1, array2));
 
-//*problem 8
+
 type Product = {
     name: string;
     price: number;
@@ -226,10 +202,3 @@ function calculateTotalPrice(product: Product[]): number {
 }
 
 
-// const products = [
-//     { name: 'Pen', price: 10, quantity: 2 },
-//     { name: 'Notebook', price: 25, quantity: 3, discount: 10 },
-//     { name: 'Bag', price: 50, quantity: 1, discount: 20 },
-// ];
-
-// console.log(calculateTotalPrice(products));
