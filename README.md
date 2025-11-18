@@ -1,6 +1,6 @@
 # 1. What are some differences between interfaces and types in TypeScript?
 
-✔ Interface কী?
+💡 Interface কী?
 ---
 
 Interface হলো object বা class-এর structure define করার একটি উপায়।
@@ -15,7 +15,7 @@ interface Person {
 const p: Person = { name: "Dady", age: 22 };
 ```
 
- ✨Interface-এর bebohar:
+❕ Interface-এর bebohar:
 ---
 
 1 .Class implements করতে  && একাধিক declaration merge করা 
@@ -26,7 +26,7 @@ const p: Person = { name: "Dady", age: 22 };
 
 
 
-✔ Type Alias কী?
+💡 Type Alias কী?
 -----
 
 Type Alias হলো টাইপকে অন্য নামে সংজ্ঞায়িত করার একটি উপায়
@@ -35,7 +35,7 @@ type ID = string | number;
 type Point = [number, number];
 ```
 
-✔Type Alias-এর ব্যবহার:
+❕ Type Alias-এর ব্যবহার:
 ---
 
 * Union, Intersection, Tuple define করা যায়
@@ -44,7 +44,7 @@ type Point = [number, number];
 
  * একাধিক declaration merge করা যায় না
 
-✔ কখন কোনটি ব্যবহার করা হয় ?
+❕ কখন কোনটি ব্যবহার করা হয় ?
 ---
 
 Interface: Object shapes, Class structure -->interface use 
