@@ -1,4 +1,4 @@
-# What are some differences between interfaces and types in TypeScript?
+# 1. What are some differences between interfaces and types in TypeScript?
 
 ✔ Interface কী?
 ---
@@ -50,4 +50,61 @@ type Point = [number, number];
 Interface: Object shapes, Class structure -->interface use 
 
 Type Alias: Union, Tuple, Intersection বা complex types  --> type alias use 
+
+---------
+
+# 2 .What is the use of the keyof keyword in TypeScript? Provide an example.
+----
+
+ keyof হলো TypeScript-এর একটি type operator যা কোনো object type-এর সবগুলো key-এর নামকে union type হিসেবে রিটার্ন করে।
+সহজ ভাষায়: একটি object-এর property নামগুলোকে type আকারে পাওয়ার জন্য keyof ব্যবহার করা হয়।
+
+
+```
+type Person = {
+  name: string;
+  age: number;
+  email: string;
+};
+
+type PersonKeys = keyof Person;
+// PersonKeys = "name" | "age" | "email"
+```
+------------
+
+keyof object-এর key নামগুলো বের করে।
+
+Type-safe function, utility type, এবং generic code লিখতে খুব গুরুত্বপূর্ণ।
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
